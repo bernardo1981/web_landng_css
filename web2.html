@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogisTech - Soluciones Logísticas Inteligentes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --secondary-color: #007bff;
+      --accent-color: #17a2b8;
+      --light-color: #f8f9fa;
+      --dark-color: #343a40;
+    }
+    
+    /* Estilos generales */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--dark-color);
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 20px 0;
+    }
+    .logo img {
+      height: 40px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Secciones */
+    section {
+      padding: 60px 0;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    p {
+      color: var(--dark-color);
+      line-height: 1.5;
+    }
+
+    /* Carrusel */
+    .slider {
+      height: 400px;
+    }
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Servicios */
+    .services {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .service {
+      flex-basis: calc(33% - 20px);
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: var(--light-color);
+      border-radius: 5px;
+    }
+
+    /* Cobertura geográfica */
+    #coverage {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+    #coverage h2 {
+      color: #fff;
+    }
+
+    /* Tecnología */
+    .tech-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .tech-item {
+      text-align: center;
+      margin: 10px;
+    }
+    .tech-icon {
+      font-size: 48px;
+      color: var(--accent-color);
+    }
+
+    /* Estadísticas */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .stat-item {
+      flex-basis: 25%;
+    }
+    .stat-number {
+      font-size: 36px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    /* Formulario de contacto */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: var(--accent-color);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #138496;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="https://via.placeholder.com/150x40.png?text=LogisTech" alt="LogisTech"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Acerca de Nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#coverage">Cobertura</a></li>
+          <li><a href="#technology">Tecnología</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Acerca de LogisTech</h2>
+      <p>LogisTech es tu socio confiable en soluciones logísticas inteligentes. Con nuestra experiencia y tecnología de vanguardia, optimizamos tu cadena de suministro para impulsar la eficiencia y el crecimiento de tu negocio.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Transporte y Distribución</h3>
+          <p>Entrega rápida y segura de tus productos a nivel nacional e internacional.</p>
+        </div>
+        <div class="service">
+          <h3>Almacenamiento</h3>
+          <p>Gestión eficiente de inventario con nuestras instalaciones de última generación.</p>
+        </div>
+        <div class="service">
+          <h3>Logística Inversa</h3>
+          <p>Manejo profesional de devoluciones y reciclaje para una cadena de suministro sostenible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="coverage">
+    <div class="container">
+      <h2>Cobertura Geográfica</h2>
+      <p>Operamos en todo el territorio nacional y en más de 50 países, garantizando una logística global eficiente para tu negocio.</p>
+    </div>
+  </section>
+
+  <section id="technology">
+    <div class="container">
+      <h2>Nuestra Tecnología</h2>
+      <div class="tech-list">
+        <div class="tech-item">
+          <div class="tech-icon">📱</div>
+          <h3>Seguimiento en Tiempo Real</h3>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🤖</div>
+          <h3>Automatización de Almacenes</h3>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">📊</div>
+          <h3>Análisis Predictivo</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <div class="container">
+      <h2>LogisTech en Números</h2>
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-number">1M+</div>
+          <p>Envíos Mensuales</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <p>Precisión en Entregas</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <p>Clientes Satisfechos</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <p>Soporte al Cliente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div>
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div>
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
+        </div>
+        <div>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+</body>
+</html>
