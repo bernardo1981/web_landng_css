@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Empresa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .logo img {
+      height: 40px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Secciones */
+    section {
+      padding: 60px 0;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* Carrusel */
+    .slider {
+      height: 400px;
+    }
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Formulario de contacto */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="https://via.placeholder.com/150x40.png?text=Logo" alt="Logo de la empresa"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Acerca de Nosotros</a></li>
+          <li><a href="#team">Nuestro Equipo</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Acerca de Nosotros</h2>
+      <p>Aquí puedes incluir una descripción breve de tu empresa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </section>
+
+  <section id="team" style="background-color: #f4f4f4;">
+    <div class="container">
+      <h2>Nuestro Equipo</h2>
+      <p>Presenta a los miembros de tu equipo con una breve descripción. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </section>
+
+  <section id="carousel">
+    <div class="container">
+      <div class="slider">
+        <img src="https://via.placeholder.com/1200x400.png?text=Imagen+1" alt="Imagen 1">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background-color: #f4f4f4;">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div>
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div>
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
+        </div>
+        <div>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+</body>
+</html>
